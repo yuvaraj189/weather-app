@@ -1,0 +1,66 @@
+
+body {
+    color: white;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    background-image: url("	https://images3.alphacoders.com/109/1091500.jpg");
+    background-size: cover;
+    background-position: top center;
+  }
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items:end;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  
+  #last {
+    margin-right: 0;
+    padding-right: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    position: relative;
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 3px 6px red;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(90, 0, 0);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    text-shadow: 1px 3px 6px rgb(90, 0, 0);
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(63, 0, 0);
+    transition: 0.5s;
+    text-shadow: 1px 3px 6px rgb(90, 0, 0);
+  }
+  
